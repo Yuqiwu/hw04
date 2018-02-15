@@ -36,9 +36,22 @@ def find_zpc_score(z, g):
 
 
 i = 0
+
+print "This are the test case for find_zpc_grade"
 while i < 10:
     print find_zpc_grade("11225", "A")[i]['name']
     print find_zpc_grade("11225", "A")[i]['address']['zipcode']
     print find_zpc_grade("11225", "A")[i]['grades'][0]['grade']
+    print "      "
+    i = i + 1
+
+i = 0
+
+print "=========================================="
+print "This are the test case for find_zpc_score"
+while i < 10:
+    print find_zpc_score("11225", "$lt 10")[i]['name']
+    print find_zpc_score("11225", "$lt 10")[i]['address']['zipcode']
+    print find_zpc_score("11225", "$lt 10")[i]['grades'][0]['grade']
     print "      "
     i = i + 1
