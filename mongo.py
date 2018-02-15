@@ -38,7 +38,7 @@ def find_zpc_score(z, g):
 i = 0
 while i < 10:
     print find_zpc_grade("11225", "A")[i]['name']
-    print find_zpc_grade("11225", "A")[i]['zipcode']
+    print find_zpc_grade("11225", "A")[i]['address']['zipcode']
     print find_zpc_grade("11225", "A")[i]['grades']['grade']
     print "      "
     i = i + 1
