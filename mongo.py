@@ -12,19 +12,19 @@ def find_borough(b):
     return name
 
 def find_zpcode(z):
-    name = []
+    info = []
     all = collection.find( {"address.zipcode": z} )
     for each in all:
-        name.append(each)
-    return name
+        info.append(each)
+    return info
 
 def find_zpc_grade(z, g):
-    name = []
+    info = []
     all = collection.find( {"address.zipcode": z}, {"grades.grade": g} )
     for each in all:
         one = collection.find_one({"_id" : each["_id"]})
-        name.append(one["name"])
-    return name
+        name.append(one)
+    return info
 
 def find_zpc_score(z, g):
     info = []
