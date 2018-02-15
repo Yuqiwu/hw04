@@ -6,7 +6,7 @@ collection = db.restaurants
 
 def find_borough(b):
     name = []
-    all = collection.find( {"borough": b} )
+    all = collection.find( {"borough": b} ).pretty()
     for each in all:
         name.append(each)
     return name
