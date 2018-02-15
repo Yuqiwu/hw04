@@ -37,5 +37,5 @@ def find_zpc_score(z, g):
 
 i = 0
 while i < 10:
-    print find_borough("Brooklyn")[i]
+    print find_zpcode("11225")[i]
     i = i + 1
