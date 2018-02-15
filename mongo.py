@@ -44,7 +44,7 @@ while i < 10:
 i = 0
 print "This are the test case for find_zpcode"
 while i < 10:
-    print find_borough("Brooklyn")[i]["address"]["zipcode"]
+    print find_zpcode("11225")[i]["address"]["zipcode"]
     print "      "
     i = i + 1
 
