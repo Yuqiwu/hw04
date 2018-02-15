@@ -23,7 +23,7 @@ def find_zpc_grade(z, g):
     all = collection.find( {"address.zipcode": z}, {"grades.grade": g} )
     for each in all:
         one = collection.find_one({"_id" : each["_id"]})
-        name.append(one)
+        info.append(one)
     return info
 
 def find_zpc_score(z, g):
