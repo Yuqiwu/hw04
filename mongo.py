@@ -34,6 +34,19 @@ def find_zpc_score(z, g):
         info.append(one)
     return info
 
+i = 0
+print "This are the test case for find_borough"
+while i < 10:
+    print find_borough("Brooklyn")[i]["borough"]
+    print "      "
+    i = i + 1
+
+i = 0
+print "This are the test case for find_zpcode"
+while i < 10:
+    print find_borough("Brooklyn")[i]["address"]["zipcode"]
+    print "      "
+    i = i + 1
 
 i = 0
 
