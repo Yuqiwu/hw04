@@ -35,4 +35,7 @@ def find_zpc_score(z, g):
     return name
 
 
-print find_borough("Brooklyn")
+i = 0
+while i < 10:
+    print find_borough("Brooklyn")[i]
+    i--
