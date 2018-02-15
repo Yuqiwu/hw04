@@ -32,7 +32,7 @@ def find_zpc_score(z, g):
     for each in all:
         one = collection.find_one({"_id" : each["_id"]})
         info.append(one)
-    return name
+    return info
 
 
 i = 0
