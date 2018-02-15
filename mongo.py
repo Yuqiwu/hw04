@@ -52,6 +52,9 @@ print "This are the test case for find_zpc_score"
 while i < 10:
     print find_zpc_score("11225", "$lt 10")[i]['name']
     print find_zpc_score("11225", "$lt 10")[i]['address']['zipcode']
-    print find_zpc_score("11225", "$lt 10")[i]['grades'][0]['grade']
+    x = 0
+    while x < len(find_zpc_score("11225", "$lt 10")[i]['grades']):
+        print find_zpc_score("11225", "$lt 10")[i]['grades'][x]['score']
+        x = x + 1
     print "      "
     i = i + 1
