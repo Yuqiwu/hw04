@@ -34,7 +34,7 @@ def find_zpc_score(z, g):
         info.append(one)
     return info
 
-print "=========================================="
+print "========================================================================"
 i = 0
 print "This are the test case for find_borough"
 while i < 10:
@@ -42,7 +42,7 @@ while i < 10:
     print "      "
     i = i + 1
 
-print "=========================================="
+print "========================================================================"
 i = 0
 print "This are the test case for find_zpcode"
 while i < 10:
@@ -50,7 +50,7 @@ while i < 10:
     print "      "
     i = i + 1
 
-print "=========================================="
+print "========================================================================"
 i = 0
 print "This are the test case for find_zpc_grade"
 while i < 10:
@@ -63,7 +63,7 @@ while i < 10:
     print "      "
     i = i + 1
 
-print "=========================================="
+print "========================================================================"
 i = 0
 print "This are the test case for find_zpc_score"
 while i < 10:
